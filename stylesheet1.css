@@ -1,0 +1,11 @@
+body{
+ background-color : lime;
+}
+h1{
+	color: blue;	
+}
+ul{
+	color:pink;
+	list-style-type:square;
+}
+font-family: "Times New Roman", Times, serif;
