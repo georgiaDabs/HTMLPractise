@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
+<script type="text/javascript">
+function turnRound(){
+	document.getElementById("githubImg").innerHTML="hello";
+}
+
+</script>
 <h1>Internships</h1>
 <div class="row">
-<div class="col-sm-4">
+<div id=col1 class="col-sm-4">
 <div class="thumbnail">
 <a href="https://www.w3schools.com/booTsTrap/bootstrap_images.asp">
 <img src="durham.jpg" class="img-responsive" alt="durham pic" >
 </a>
 </div>
+<button type="button" class="btn btn-primary">enlarge</button>
 </div>
-<div class="col-sm-4">
+
+<div id=col2 class="col-sm-4">
 <div class="thumbnail">
 <a href="https://www.google.co.uk">
 <img src="durhamUni1.jpg" class="img-responsive" alt="durham pic 2">
 </a>
 </div>
 </div>
-<div class="col-sm-4">
+<div id= col3 class="col-sm-4">
 <div class="thumbnail">
 <a href="https://duo.dur.ac.uk">
 <img src="durhamUni2.jpg" class="img-responsive" alt=" durham pic 3">
@@ -42,7 +51,13 @@
 <div class="col-sm-6" style="background-color:lavender;">
 <h2>Links <small>i have websites showing my skills</small></h2>
 <ol>
-<a href="https://github.com/georgiaDabs"><li>Github!</li></a>
+<div class="col-sm-6">
+<div class="thumbnail">
+<a href="https://github.com/georgiaDabs"></a>
+<img onclick="turnRound()" src="github.jpg" class="img-responsive" alt="github" id="githubImg">
+
+</div>
+</div>
 <a href="https://stackexchange.com/users/14509760/georgia-dabinett"><li>StackOverflow!</li></a>
 </ol>
 </div>
