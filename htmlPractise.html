@@ -8,10 +8,12 @@
 </head>
 <body>
 <script type="text/javascript">
-function turnRound(){
-	document.getElementById("githubImg").innerHTML="hello";
+function turnRound(x){
+	document.getElementById(x).innerHTML="link ";
 }
-
+document.getElementById("githubImg").addEventListener("click", function() {
+    document.getElementById("githubPara").innerHTML="github link";
+}
 </script>
 <h1>Internships</h1>
 <div class="row">
@@ -50,16 +52,20 @@ function turnRound(){
 </div>
 <div class="col-sm-6" style="background-color:lavender;">
 <h2>Links <small>i have websites showing my skills</small></h2>
-<ol>
+
 <div class="col-sm-6">
 <div class="thumbnail">
-<a href="https://github.com/georgiaDabs"></a>
-<img onclick="turnRound()" src="github.jpg" class="img-responsive" alt="github" id="githubImg">
+
+<img onclick="turnRound(githubPara)" src="github.jpg" class="img-responsive" alt="github" id="githubImg">
+<a href="https://github.com/georgiaDabs" id="githubPara"></a>";
 
 </div>
 </div>
-<a href="https://stackexchange.com/users/14509760/georgia-dabinett"><li>StackOverflow!</li></a>
-</ol>
+<div class="col-sm-6">
+<img onclick="turnRound(stackOverflowPara)" src="StackOverflow.jpg" class="img-responsive" alt="StackOverflow">
+<a href="https://stackexchange.com/users/14509760/georgia-dabinett" id="stackOverflowPara"></a>
+</div>
+
 </div>
 </div>
 </body>
